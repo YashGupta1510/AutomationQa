@@ -11,5 +11,5 @@ import io.cucumber.junit.CucumberOptions;
 		plugin= {"pretty", "html:target/test-report.html"},
 		tags = "@all"
 		)
-public class AmazonRunnerTest {
+public class TestRunner {
 }
