@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="7" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-30T13:40:52 IST" name="Default suite" finished-at="2024-04-30T13:43:11 IST" duration-ms="138795">
+    <groups>
+      <group name="Functionality">
+        <method signature="HomeTest.searchProduct()[pri:2, instance:tests.HomeTest@7072bc39]" name="searchProduct" class="tests.HomeTest"/>
+        <method signature="SignInPageTest.tryInvalidEmailSignIn()[pri:2, instance:tests.SignInPageTest@1a6f2363]" name="tryInvalidEmailSignIn" class="tests.SignInPageTest"/>
+        <method signature="HomeTest.addToCartTest()[pri:3, instance:tests.HomeTest@7072bc39]" name="addToCartTest" class="tests.HomeTest"/>
+        <method signature="SignInPageTest.trySignIn()[pri:3, instance:tests.SignInPageTest@1a6f2363]" name="trySignIn" class="tests.SignInPageTest"/>
+        <method signature="HomeTest.addToCartTestFail()[pri:4, instance:tests.HomeTest@7072bc39]" name="addToCartTestFail" class="tests.HomeTest"/>
+        <method signature="LanguageSelectPageTest.selectLanguage()[pri:7, instance:tests.LanguageSelectPageTest@cc6460c]" name="selectLanguage" class="tests.LanguageSelectPageTest"/>
+        <method signature="LanguageSelectPageTest.selectLanguageFail()[pri:8, instance:tests.LanguageSelectPageTest@cc6460c]" name="selectLanguageFail" class="tests.LanguageSelectPageTest"/>
+      </group> <!-- Functionality -->
+      <group name="UI">
+        <method signature="HomeTest.homePageLogo()[pri:1, instance:tests.HomeTest@7072bc39]" name="homePageLogo" class="tests.HomeTest"/>
+        <method signature="SignInPageTest.signInPageTitle()[pri:1, instance:tests.SignInPageTest@1a6f2363]" name="signInPageTitle" class="tests.SignInPageTest"/>
+        <method signature="HomeTest.homePageLogoFail()[pri:5, instance:tests.HomeTest@7072bc39]" name="homePageLogoFail" class="tests.HomeTest"/>
+      </group> <!-- UI -->
+    </groups>
+    <test started-at="2024-04-30T13:40:52 IST" name="Default test" finished-at="2024-04-30T13:43:11 IST" duration-ms="138795">
+      <class name="tests.LanguageSelectPageTest">
+        <test-method is-config="true" signature="setReport()[pri:0, instance:tests.LanguageSelectPageTest@cc6460c]" started-at="2024-04-30T13:40:52 IST" name="setReport" finished-at="2024-04-30T13:40:52 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setReport -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.LanguageSelectPageTest@cc6460c]" started-at="2024-04-30T13:40:52 IST" name="setup" finished-at="2024-04-30T13:41:13 IST" duration-ms="20910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LanguageSelectPageTest.selectLanguage()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectLanguage()[pri:7, instance:tests.LanguageSelectPageTest@cc6460c]" started-at="2024-04-30T13:41:13 IST" name="selectLanguage" finished-at="2024-04-30T13:41:16 IST" duration-ms="2646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectLanguage -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LanguageSelectPageTest@cc6460c]" started-at="2024-04-30T13:41:16 IST" name="getResult" finished-at="2024-04-30T13:41:17 IST" duration-ms="773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectLanguage status=SUCCESS method=LanguageSelectPageTest.selectLanguage()[pri:7, instance:tests.LanguageSelectPageTest@cc6460c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.LanguageSelectPageTest@cc6460c]" started-at="2024-04-30T13:41:17 IST" name="setup" finished-at="2024-04-30T13:41:24 IST" duration-ms="7398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.LanguageSelectPageTest.selectLanguageFail() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="selectLanguageFail()[pri:8, instance:tests.LanguageSelectPageTest@cc6460c]" started-at="2024-04-30T13:41:24 IST" name="selectLanguageFail" finished-at="2024-04-30T13:41:25 IST" duration-ms="1241" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[screenshots\TC3_LanguageFail.png (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: screenshots\TC3_LanguageFail.png (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:185)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:131)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:110)
+at tests.LanguageSelectPageTest.selectLanguageFail(LanguageSelectPageTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectLanguageFail -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.LanguageSelectPageTest@cc6460c]" started-at="2024-04-30T13:41:25 IST" name="getResult" finished-at="2024-04-30T13:41:26 IST" duration-ms="608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectLanguageFail status=FAILURE method=LanguageSelectPageTest.selectLanguageFail()[pri:8, instance:tests.LanguageSelectPageTest@cc6460c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="finishReport()[pri:0, instance:tests.LanguageSelectPageTest@cc6460c]" started-at="2024-04-30T13:43:11 IST" name="finishReport" finished-at="2024-04-30T13:43:11 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishReport -->
+      </class> <!-- tests.LanguageSelectPageTest -->
+      <class name="tests.SignInPageTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.SignInPageTest@1a6f2363]" started-at="2024-04-30T13:41:26 IST" name="setup" finished-at="2024-04-30T13:41:36 IST" duration-ms="10551" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SignInPageTest.signInPageTitle()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="signInPageTitle()[pri:1, instance:tests.SignInPageTest@1a6f2363]" started-at="2024-04-30T13:41:36 IST" name="signInPageTitle" finished-at="2024-04-30T13:41:40 IST" duration-ms="3476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signInPageTitle -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.SignInPageTest@1a6f2363]" started-at="2024-04-30T13:41:40 IST" name="getResult" finished-at="2024-04-30T13:41:40 IST" duration-ms="571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=signInPageTitle status=SUCCESS method=SignInPageTest.signInPageTitle()[pri:1, instance:tests.SignInPageTest@1a6f2363] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.SignInPageTest@1a6f2363]" started-at="2024-04-30T13:41:40 IST" name="setup" finished-at="2024-04-30T13:41:57 IST" duration-ms="16745" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SignInPageTest.tryInvalidEmailSignIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="tryInvalidEmailSignIn()[pri:2, instance:tests.SignInPageTest@1a6f2363]" started-at="2024-04-30T13:41:57 IST" name="tryInvalidEmailSignIn" finished-at="2024-04-30T13:42:01 IST" duration-ms="3753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tryInvalidEmailSignIn -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.SignInPageTest@1a6f2363]" started-at="2024-04-30T13:42:01 IST" name="getResult" finished-at="2024-04-30T13:42:02 IST" duration-ms="604" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=tryInvalidEmailSignIn status=SUCCESS method=SignInPageTest.tryInvalidEmailSignIn()[pri:2, instance:tests.SignInPageTest@1a6f2363] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.SignInPageTest@1a6f2363]" started-at="2024-04-30T13:42:02 IST" name="setup" finished-at="2024-04-30T13:42:06 IST" duration-ms="4308" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.SignInPageTest.trySignIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="trySignIn()[pri:3, instance:tests.SignInPageTest@1a6f2363]" started-at="2024-04-30T13:42:06 IST" name="trySignIn" finished-at="2024-04-30T13:42:16 IST" duration-ms="10267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trySignIn -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.SignInPageTest@1a6f2363]" started-at="2024-04-30T13:42:16 IST" name="getResult" finished-at="2024-04-30T13:42:17 IST" duration-ms="682" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=trySignIn status=SUCCESS method=SignInPageTest.trySignIn()[pri:3, instance:tests.SignInPageTest@1a6f2363] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- tests.SignInPageTest -->
+      <class name="tests.HomeTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:17 IST" name="setup" finished-at="2024-04-30T13:42:26 IST" duration-ms="9449" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomeTest.homePageLogo()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homePageLogo()[pri:1, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:26 IST" name="homePageLogo" finished-at="2024-04-30T13:42:26 IST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageLogo -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:26 IST" name="getResult" finished-at="2024-04-30T13:42:27 IST" duration-ms="558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePageLogo status=SUCCESS method=HomeTest.homePageLogo()[pri:1, instance:tests.HomeTest@7072bc39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:27 IST" name="setup" finished-at="2024-04-30T13:42:31 IST" duration-ms="4558" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomeTest.searchProduct()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="searchProduct()[pri:2, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:31 IST" name="searchProduct" finished-at="2024-04-30T13:42:34 IST" duration-ms="2225" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:34 IST" name="getResult" finished-at="2024-04-30T13:42:34 IST" duration-ms="644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchProduct status=SUCCESS method=HomeTest.searchProduct()[pri:2, instance:tests.HomeTest@7072bc39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:34 IST" name="setup" finished-at="2024-04-30T13:42:39 IST" duration-ms="4771" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomeTest.addToCartTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCartTest()[pri:3, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:39 IST" name="addToCartTest" finished-at="2024-04-30T13:42:44 IST" duration-ms="5149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTest -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:44 IST" name="getResult" finished-at="2024-04-30T13:42:45 IST" duration-ms="613" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCartTest status=SUCCESS method=HomeTest.addToCartTest()[pri:3, instance:tests.HomeTest@7072bc39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:45 IST" name="setup" finished-at="2024-04-30T13:42:51 IST" duration-ms="6299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomeTest.addToCartTestFail() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="addToCartTestFail()[pri:4, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:51 IST" name="addToCartTestFail" finished-at="2024-04-30T13:42:54 IST" duration-ms="3094" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[screenshots\TC2_AddToCartTestFail.png (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: screenshots\TC2_AddToCartTestFail.png (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:185)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:131)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:110)
+at tests.HomeTest.addToCartTestFail(HomeTest.java:98)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCartTestFail -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:54 IST" name="getResult" finished-at="2024-04-30T13:42:55 IST" duration-ms="614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=addToCartTestFail status=FAILURE method=HomeTest.addToCartTestFail()[pri:4, instance:tests.HomeTest@7072bc39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:42:55 IST" name="setup" finished-at="2024-04-30T13:43:10 IST" duration-ms="15169" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.HomeTest.homePageLogoFail() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="homePageLogoFail()[pri:5, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:43:10 IST" name="homePageLogoFail" finished-at="2024-04-30T13:43:10 IST" duration-ms="434" status="FAIL">
+          <exception class="java.io.FileNotFoundException">
+            <message>
+              <![CDATA[screenshots\TC1_HomePageLogoFail.png (The system cannot find the path specified)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.FileNotFoundException: screenshots\TC1_HomePageLogoFail.png (The system cannot find the path specified)
+at java.base/java.io.FileOutputStream.open0(Native Method)
+at java.base/java.io.FileOutputStream.open(FileOutputStream.java:295)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:236)
+at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:185)
+at org.openqa.selenium.io.FileHandler.copyFile(FileHandler.java:131)
+at org.openqa.selenium.io.FileHandler.copy(FileHandler.java:110)
+at tests.HomeTest.homePageLogoFail(HomeTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.FileNotFoundException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageLogoFail -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:tests.HomeTest@7072bc39]" started-at="2024-04-30T13:43:10 IST" name="getResult" finished-at="2024-04-30T13:43:11 IST" duration-ms="566" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePageLogoFail status=FAILURE method=HomeTest.homePageLogoFail()[pri:5, instance:tests.HomeTest@7072bc39] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- tests.HomeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
