@@ -50,12 +50,6 @@
 </dependency>
 
 
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>7.17.0</version>
-            <scope>test</scope>
-        </dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 <dependency>
     <groupId>io.cucumber</groupId>
